@@ -1,14 +1,21 @@
+// Hecs Colors
+@base-hecs-color: #165f48;
+@bright-hecs-color: #00AC7F;
+@dark-hecs-color: #1c2623;
+@dull-hecs-color: #203d33;
+@light-hecs-color: #75877d;
+
 // Colors
 
-@text-color: #aaa;
-@text-color-subtle: #555;
+@text-color: @light-hecs-color;
+@text-color-subtle: lighten(@dull-hecs-color, 5%);
 @text-color-highlight: #fff;
 @text-color-selected: @text-color-highlight;
 
 @text-color-info: #5293d8;
 @text-color-success: #26c26a;
 @text-color-warning: #ff982d;
-@text-color-error: #c00;
+@text-color-error: #E23131;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -19,11 +26,11 @@
 @background-color-info: #0098ff;
 @background-color-success: #17ca65;
 @background-color-warning: #ffaa2c;
-@background-color-error: #c00;
+@background-color-error: #E23131;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-selected: @base-hecs-color;
 
-@app-background-color: #333;
+@app-background-color: @dark-hecs-color;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
 @base-border-color: rgba(0, 0, 0, 0.5);
@@ -31,10 +38,10 @@
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: #212224;
+@input-background-color: @dark-hecs-color;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1f21;
+@tool-panel-background-color: @dark-hecs-color;
 @tool-panel-border-color: @base-border-color;
 
 @inset-panel-background-color: #161719;
@@ -43,25 +50,25 @@
 @panel-heading-background-color: #43484d;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
+@overlay-background-color: @dark-hecs-color;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
-@button-background-color-hover: lighten(@button-background-color, 5%);
+@button-background-color: @dull-hecs-color;
+@button-background-color-hover: @base-hecs-color;
 @button-background-color-selected: #5c6064;
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: @dark-hecs-color;
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color: @dull-hecs-color;
+@tab-background-color-active: @base-hecs-color;
+@tab-border-color: @light-hecs-color;
 
 @tree-view-background-color: @tool-panel-background-color;
 @tree-view-border-color: @tool-panel-border-color;
 
-@scrollbar-background-color: rgba(42, 42, 42, 0.5);
-@scrollbar-color: rgba(92, 92, 92, 0.5);
+@scrollbar-background-color: rgba(29, 39, 36, 0.5);
+@scrollbar-color: rgba(22, 97, 71, 0.5);
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
@@ -80,7 +87,7 @@
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-@component-border-radius: 2px;
+@component-border-radius: 0;
 
 @tab-height: 30px;
 
